@@ -121,10 +121,12 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td class="visible-with-data" id="nmkec"colspan="2"><strong>nmkec</strong><br />' + (feature.properties['nmkec'] !== null ? autolinker.link(feature.properties['nmkec'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Kecamatan</th>\
+                        <td>' + (feature.properties['nmkec'] !== null ? autolinker.link(feature.properties['nmkec'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td class="visible-with-data" id="total_usah"colspan="2"><strong>total_usah</strong><br />' + (feature.properties['total_usah'] !== null ? autolinker.link(feature.properties['total_usah'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Jumlah Usaha</th>\
+                        <td>' + (feature.properties['total_usah'] !== null ? autolinker.link(feature.properties['total_usah'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
